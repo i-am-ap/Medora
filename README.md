@@ -55,5 +55,5 @@ This is a **Diabetes Prediction Web Application** built using **Python Django** 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/diabetes-prediction.git
+   git clone https://github.com/i-am-ap/Diabetes-Prediction
    cd diabetes-prediction
