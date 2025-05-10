@@ -1,9 +1,9 @@
 from django.shortcuts import render
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
-from django.shortcuts import render
+import os
+from django.conf import settings
 
 def home(request):
     return render(request, "index.html")
@@ -12,11 +12,12 @@ def predict(request):
     return render(request, "prediction.html")
 
 def result(request):
-    diabetes_dataset = pd.read_csv(r"C:\Users\aryan\Downloads\diabetes.csv")
+    csv_path = os.path.join(settings.BASE_DIR,'static', 'data', 'diabetes.csv')
+    df = pd.read_csv(csv_path)
 
     # separating the data and labels
-    X = diabetes_dataset.drop(columns = 'Outcome', axis=1)
-    Y = diabetes_dataset['Outcome']
+    X = df.drop(columns = 'Outcome', axis=1)
+    Y = df['Outcome']
     X_train, X_test, Y_train, Y_test = train_test_split(X,Y, test_size = 0.2, stratify=Y, random_state=2)
 
     model = LogisticRegression()
