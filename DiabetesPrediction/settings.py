@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-!!2)z4dzsgzvzggxgx_c(6tai_z#&grq$u19!-glf@muw85l=b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [Medora-for-u.onrender.com]
 
 
 # Application definition
