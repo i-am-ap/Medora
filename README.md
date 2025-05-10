@@ -4,6 +4,10 @@ This is a **Diabetes Prediction Web Application** built using **Python Django** 
 
 ---
 
+🚀 Live Demo: [Medora - Diabetes Prediction Web App](https://medora-for-u.onrender.com/)
+
+---
+
 ## 🚀 Features
 
 - User-friendly web interface
